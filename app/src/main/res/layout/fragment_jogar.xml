@@ -3,9 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     tools:context=".JogarFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvPergunta"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#C4FFE3"
+        android:gravity="center"
+        android:text="PERGUNTA"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
 
+    <TextView
+        android:id="@+id/tvResposta"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvPergunta"
+        android:layout_marginTop="16dp"
+        android:background="#D481F4"
+        android:gravity="center"
+        android:text="RESPOSTA"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:padding="16dp"/>
 
 </RelativeLayout>
