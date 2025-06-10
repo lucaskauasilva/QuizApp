@@ -30,4 +30,25 @@
         android:textColor="#000000"
         android:padding="16dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvResposta"
+        android:layout_marginTop="350dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <Button
+            android:layout_width="260dp"
+            android:layout_height="80dp"
+            android:text="Ex. Resposta"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="Pular"/>
+
+    </LinearLayout>
+
 </RelativeLayout>
