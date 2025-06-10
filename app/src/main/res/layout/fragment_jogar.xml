@@ -32,24 +32,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/tvResposta"
-        android:layout_marginTop="350dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:padding="16dp">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnExibirResposta"
             android:layout_width="260dp"
-            android:layout_height="80dp"
-            android:text="Ex. Resposta"/>
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Ex. Resposta"
+            android:textSize="18sp"/>
 
         <Button
             android:id="@+id/btnPular"
             android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:text="Pular"/>
+            android:layout_height="70dp"
+            android:layout_weight="0"
+            android:layout_marginLeft="15dp"
+            android:text="Pular"
+            android:textSize="18sp"/>
 
     </LinearLayout>
 
