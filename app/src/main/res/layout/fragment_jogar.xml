@@ -40,11 +40,13 @@
         android:padding="16dp">
 
         <Button
+            android:id="@+id/btnExibirResposta"
             android:layout_width="260dp"
             android:layout_height="80dp"
             android:text="Ex. Resposta"/>
 
         <Button
+            android:id="@+id/btnPular"
             android:layout_width="100dp"
             android:layout_height="80dp"
             android:text="Pular"/>
