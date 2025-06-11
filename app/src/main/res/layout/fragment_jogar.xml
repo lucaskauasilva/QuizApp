@@ -53,6 +53,7 @@
             android:layout_weight="0"
             android:layout_marginLeft="15dp"
             android:text="Pular"
+            android:drawableRight="@android:drawable/ic_media_next"
             android:textSize="18sp"/>
     </LinearLayout>
 
