@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +18,12 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class JogarFragment extends Fragment {
+
+    private TextView mTextViewPergunta;
+    private TextView mTextViewResposta;
+    private Button mButtonExResposta;
+    private Button mButtonPular;
+    private Button mButtonCadastrarPeR;
 
     public JogarFragment() {
         // Required empty public constructor
@@ -37,5 +45,12 @@ public class JogarFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        mTextViewPergunta = getActivity().findViewById(R.id.tvPergunta);
+        mTextViewResposta = getActivity().findViewById(R.id.tvResposta);
+        mButtonExResposta = getActivity().findViewById(R.id.btnExibirResposta);
+        mButtonPular = getActivity().findViewById(R.id.btnPular);
+        mButtonCadastrarPeR = getActivity().findViewById(R.id.btnCadastrarPeR);
+
     }
 }
