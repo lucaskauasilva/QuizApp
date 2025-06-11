@@ -38,7 +38,7 @@
 
         <Button
             android:id="@+id/btnExibirResposta"
-            android:layout_width="260dp"
+            android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_weight="1"
             android:text="Ex. Resposta"
@@ -46,7 +46,7 @@
 
         <Button
             android:id="@+id/btnPular"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_weight="0"
             android:layout_marginLeft="15dp"
