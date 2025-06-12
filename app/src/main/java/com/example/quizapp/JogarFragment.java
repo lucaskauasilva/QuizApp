@@ -21,7 +21,7 @@ public class JogarFragment extends Fragment {
 
     private TextView mTextViewPergunta;
     private TextView mTextViewResposta;
-    private Button mButtonExResposta;
+    private Button mButtonExibirResposta;
     private Button mButtonPular;
     private Button mButtonCadastrarPeR;
 
@@ -48,7 +48,7 @@ public class JogarFragment extends Fragment {
 
         mTextViewPergunta = getActivity().findViewById(R.id.tvPergunta);
         mTextViewResposta = getActivity().findViewById(R.id.tvResposta);
-        mButtonExResposta = getActivity().findViewById(R.id.btnExibirResposta);
+        mButtonExibirResposta = getActivity().findViewById(R.id.btnExibirResposta);
         mButtonPular = getActivity().findViewById(R.id.btnPular);
         mButtonCadastrarPeR = getActivity().findViewById(R.id.btnCadastrarPeR);
 
