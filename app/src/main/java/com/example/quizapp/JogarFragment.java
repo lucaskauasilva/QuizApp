@@ -61,6 +61,12 @@ public class JogarFragment extends Fragment {
         /* @+id/btnPular (mButtonPular) */ //(à implementar)
 
         /* @+id/btnCadastrarPeR (mButtonCadastrarPeR) */ //(à implementar)
-
+        mButtonCadastrarPeR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.frameLayout, new CadastrarFragment()).commit();
+            }
+        });
     }
 }
