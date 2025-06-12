@@ -52,5 +52,15 @@ public class JogarFragment extends Fragment {
         mButtonPular = getActivity().findViewById(R.id.btnPular);
         mButtonCadastrarPeR = getActivity().findViewById(R.id.btnCadastrarPeR);
 
+        /* @+id/tvPergunta (mTextViewPergunta) */ //(à implementar)
+
+        /* @+id/tvResposta (mTextViewResposta) */ //(à implementar)
+
+        /* @+id/btnExibirResposta (mButtonExibirResposta) */ //(à implementar)
+
+        /* @+id/btnPular (mButtonPular) */ //(à implementar)
+
+        /* @+id/btnCadastrarPeR (mButtonCadastrarPeR) */ //(à implementar)
+
     }
 }
