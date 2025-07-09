@@ -49,9 +49,21 @@ public class CadastrarFragment extends Fragment {
             mEditTextPergunta = getActivity().findViewById(R.id.etPergunta);
             mEditTextResposta = getActivity().findViewById(R.id.etResposta);
             mButtonCadastrar = getActivity().findViewById(R.id.btnCadastrar);
-            mButtonCadastrar = getActivity().findViewById(R.id.btnJogar);
+            mButtonJogar = getActivity().findViewById(R.id.btnJogar);
 
+            /* @+id/etPergunta (mEditTextPergunta) */ //{ à implementar }
 
+            /* @+id/etResposta (mEditTextResposta) */ //{ à implementar }
 
+            /* @+id/btnCadastrar (mButtonCadastrar) */ //{ à implementar }
+
+            /* @+id/btnJogar (mButtonJogar) */ //{ à implementar }
+            mButtonJogar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    getActivity().getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.frameLayout, new JogarFragment()).commit();
+                }
+            });
     }
 }
