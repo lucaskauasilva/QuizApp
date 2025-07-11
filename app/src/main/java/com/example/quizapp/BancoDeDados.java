@@ -6,4 +6,8 @@ import androidx.room.RoomDatabase;
 @Database(entities = {Questoes.class}, version = 1)
 public abstract class BancoDeDados extends RoomDatabase{
 
+    public abstract MeuDAO meuDAO(); // para recuperar o objeto DAO
+
+    private static BancoDeDados INSTANCE;
+
 }
