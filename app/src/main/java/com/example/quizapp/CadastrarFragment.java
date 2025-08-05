@@ -52,15 +52,14 @@ public class CadastrarFragment extends Fragment {
             mButtonCadastrar = getActivity().findViewById(R.id.btnCadastrar);
             mButtonJogar = getActivity().findViewById(R.id.btnJogar);
 
-            /* @+id/etPergunta (mEditTextPergunta) */ //{ à implementar }
-
-            /* @+id/etResposta (mEditTextResposta) */ //{ à implementar }
-
-            /* @+id/btnCadastrar (mButtonCadastrar) */ //{ à implementar }
+            /* @+id/btnCadastrar (mButtonCadastrar) */ //{ implementado }
             mButtonCadastrar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    /* @+id/etPergunta (mEditTextPergunta) */ //{ implementado }
                     String pergunta = mEditTextPergunta.getText().toString();
+
+                    /* @+id/etResposta (mEditTextResposta) */ //{ implementado }
                     String resposta = mEditTextResposta.getText().toString();
 
                     if(!pergunta.isEmpty() && !resposta.isEmpty()){
@@ -79,7 +78,7 @@ public class CadastrarFragment extends Fragment {
                 }
             });
 
-            /* @+id/btnJogar (mButtonJogar) */ //{ à implementar }
+            /* @+id/btnJogar (mButtonJogar) */ //{ implementado }
             mButtonJogar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
