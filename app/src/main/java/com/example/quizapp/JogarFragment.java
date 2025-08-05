@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.List;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link JogarFragment#newInstance} factory method to
@@ -24,6 +26,7 @@ public class JogarFragment extends Fragment {
     private Button mButtonExibirResposta;
     private Button mButtonPular;
     private Button mButtonCadastrarPeR;
+    private List<Questoes> mListQuestoes;
 
     public JogarFragment() {
         // Required empty public constructor
@@ -53,12 +56,12 @@ public class JogarFragment extends Fragment {
         mButtonCadastrarPeR = getActivity().findViewById(R.id.btnCadastrarPeR);
 
         /* @+id/tvPergunta (mTextViewPergunta) */ //(à implementar)
-
         /* @+id/tvResposta (mTextViewResposta) */ //(à implementar)
-
         /* @+id/btnExibirResposta (mButtonExibirResposta) */ //(à implementar)
-
         /* @+id/btnPular (mButtonPular) */ //(à implementar)
+        /* mListQuestoes */ //(implementado)
+        mListQuestoes = BancoDeDados.getBancoDeDados(getActivity())
+                .meuDAO().pesquisarTodasQuestoes();
 
         /* @+id/btnCadastrarPeR (mButtonCadastrarPeR) */ //(à implementar)
         mButtonCadastrarPeR.setOnClickListener(new View.OnClickListener() {
