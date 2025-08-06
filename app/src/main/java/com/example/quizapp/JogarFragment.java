@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.List;
+import java.util.Random;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -71,5 +72,17 @@ public class JogarFragment extends Fragment {
                         .replace(R.id.frameLayout, new CadastrarFragment()).commit();
             }
         });
+    }
+
+    private void proximaQuestao() {
+
+        if (!mListQuestoes.isEmpty()) {
+            int totalDeQuestoes = mListQuestoes.size();
+            int indexAleatorio = new Random().nextInt(totalDeQuestoes);
+            Questoes questoes = mListQuestoes.get(indexAleatorio);
+            mTextViewPergunta.setText(questoes.getPergunta());
+            mTextViewResposta.setText(questoes.getResposta());
+            mTextViewResposta.setVisibility(View.GONE);
+        }
     }
 }
