@@ -59,7 +59,23 @@ public class JogarFragment extends Fragment {
         /* @+id/tvPergunta (mTextViewPergunta) */ //(à implementar)
         /* @+id/tvResposta (mTextViewResposta) */ //(à implementar)
         /* @+id/btnExibirResposta (mButtonExibirResposta) */ //(à implementar)
+        mButtonExibirResposta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mTextViewResposta.setVisibility(view.VISIBLE);
+            }
+        });
+
+        proximaQuestao();
+
         /* @+id/btnPular (mButtonPular) */ //(à implementar)
+        mButtonPular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proximaQuestao();
+            }
+        });
+
         /* mListQuestoes */ //(implementado)
         mListQuestoes = BancoDeDados.getBancoDeDados(getActivity())
                 .meuDAO().pesquisarTodasQuestoes();
